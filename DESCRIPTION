@@ -1,0 +1,15 @@
+Package: bushfireexplorer
+Title: Australian Bushfire Weather Risk Explorer
+Version: 0.0.0.9000
+Authors@R: person("Qingqing", "Yu",
+    email = "qyuu0033@student.monash.edu",
+    role = c("aut", "cre"))
+Description: Provides data and interactive tools for exploring
+    Australian bushfire weather risk and climate change findings.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.1.1
