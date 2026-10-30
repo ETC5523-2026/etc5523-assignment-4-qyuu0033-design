@@ -1,0 +1,133 @@
+
+/* =================================
+   Australian Bushfire Risk Explorer
+   Main visual theme
+   ================================= */
+
+body {
+  background-color: #F5F8F9;
+  color: #26383D;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Main page container */
+.container-fluid {
+  padding: 25px 35px;
+}
+
+/* Main title */
+h1 {
+  color: #183B46;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+h3 {
+  color: #183B46;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+h4 {
+  color: #287C8E;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar */
+.well {
+  background-color: #FFFFFF;
+  border: 1px solid #DCE6E8;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(24, 59, 70, 0.05);
+}
+
+/* Input labels */
+.control-label {
+  color: #26383D;
+  font-weight: 600;
+}
+
+/* Dropdown menus */
+.selectize-input {
+  border: 1px solid #CBD8DC !important;
+  border-radius: 7px !important;
+  min-height: 40px;
+}
+
+/* Main content area */
+.main-panel {
+  padding-left: 25px;
+}
+
+/* Plot area */
+.shiny-plot-output {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Tables */
+.table {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.table thead th {
+  background-color: #EAF1F2;
+  color: #183B46;
+  font-weight: 700;
+}
+
+.table td {
+  padding: 12px !important;
+  vertical-align: middle !important;
+}
+
+/* Qualitative finding card */
+.qualitative-card {
+  background-color: #EAF1F2;
+  border-left: 5px solid #287C8E;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  line-height: 1.7;
+}
+
+/* Research explanation cards */
+.info-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DCE6E8;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Help text */
+.help-block {
+  color: #687B80;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .main-panel {
+    padding-left: 15px;
+  }
+}
