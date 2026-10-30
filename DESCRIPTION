@@ -15,3 +15,9 @@ LazyData: true
 Config/roxygen2/version: 8.1.1
 Imports:
     shiny
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://etc5523-2026.github.io/etc5523-assignment-4-qyuu0033-design/,
+    https://github.com/ETC5523-2026/etc5523-assignment-4-qyuu0033-design

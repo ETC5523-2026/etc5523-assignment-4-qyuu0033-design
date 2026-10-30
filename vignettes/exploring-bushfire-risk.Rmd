@@ -1,0 +1,133 @@
+---
+title: "Exploring Australian Bushfire Weather Risk"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring Australian Bushfire Weather Risk}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+The Australian Bushfire Weather Risk Explorer is an
+interactive data product based on published research
+examining the influence of anthropogenic climate change
+on extreme bushfire weather risk in Australia.
+
+It focuses on findings related to the 2019/20 Australian
+bushfire season.
+
+## Dataset
+
+The package includes the `bushfire_risk` dataset, which
+contains nine curated research findings covering:
+
+- Extreme fire weather
+- Extreme temperature
+- Extreme drought
+- The driest month of the fire season
+- Natural climate variability
+
+## Loading the dataset
+
+Load the package and inspect the dataset:
+
+```{r}
+library(bushfireexplorer)
+
+head(bushfire_risk)
+```
+
+You can also inspect its structure:
+
+```{r}
+str(bushfire_risk)
+```
+
+## Summarising research findings
+
+The `summarise_risk()` function allows users to explore
+research findings by indicator and climate scenario.
+
+### View all research findings
+
+```{r}
+summarise_risk(data = bushfire_risk)
+```
+
+### Filter by risk indicator and climate scenario
+
+For example, users can focus on extreme fire weather
+under the present climate:
+
+```{r}
+summarise_risk(
+  data = bushfire_risk,
+  selected_indicator = "Extreme fire weather",
+  selected_scenario = "Present climate"
+)
+```
+
+The function returns matching research records, including
+the evidence type, estimate type, numerical estimate,
+research finding and limitations.
+
+Qualitative findings are also retained when numerical
+estimates are unavailable.
+
+## Launching the Shiny application
+
+Launch the interactive application using:
+
+```{r eval=FALSE}
+run_app()
+```
+
+Users can select a risk indicator and climate scenario
+to explore the corresponding findings.
+
+The application displays numerical estimates where
+available, alongside research interpretations and
+important limitations.
+
+## Interpreting the findings
+
+The central climate-model estimate indicates that the
+probability of a 2019/20-level extreme fire-weather event
+under the present climate is approximately 1.8 times
+the probability in the early twentieth-century climate.
+
+The conservative lower bound is approximately 1.3 times.
+
+The ERA5 observational estimate is greater than four.
+However, observational and model estimates should not
+be directly combined because they do not overlap.
+
+Under a climate scenario approximately 2°C warmer,
+the estimated probability is approximately eight times
+higher, with a conservative lower bound of approximately
+four times higher.
+
+These future estimates are based on only two climate
+models and involve substantial uncertainty.
+
+## Important limitations
+
+This package presents curated findings from published
+research. It does not perform a new climate-model analysis.
+
+Bushfire weather risk does not directly represent actual
+fire occurrence or damage. Ignition, vegetation, exposure
+and vulnerability also influence bushfire impacts.
+
+Some findings are qualitative and do not have numerical
+estimates. These are presented as research descriptions
+rather than numerical charts.
+
+## Source
+
+van Oldenborgh et al. (2021). Attribution of the
+Australian bushfire risk to anthropogenic climate change.
+Natural Hazards and Earth System Sciences, 21, 941–960.
+
+https://doi.org/10.5194/nhess-21-941-2021

@@ -1,0 +1,9 @@
+pandoc: 3.6.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  exploring-bushfire-risk: exploring-bushfire-risk.html
+last_built: 2026-10-30T06:06Z
+urls:
+  reference: https://etc5523-2026.github.io/etc5523-assignment-4-qyuu0033-design/reference
+  article: https://etc5523-2026.github.io/etc5523-assignment-4-qyuu0033-design/articles

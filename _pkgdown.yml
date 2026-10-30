@@ -1,0 +1,15 @@
+url: https://etc5523-2026.github.io/etc5523-assignment-4-qyuu0033-design/
+
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [github]
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/ETC5523-2026/etc5523-assignment-4-qyuu0033-design
+      aria-label: GitHub
+
